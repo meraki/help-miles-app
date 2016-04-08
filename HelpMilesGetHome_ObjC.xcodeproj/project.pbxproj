@@ -7,25 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56477FA11CA1447900133281 /* Miles-Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 56477FA01CA1447900133281 /* Miles-Home.png */; };
+		56477FA31CA1448800133281 /* Miles-Unknown.png in Resources */ = {isa = PBXBuildFile; fileRef = 56477FA21CA1448800133281 /* Miles-Unknown.png */; };
+		56477FA51CA15ADC00133281 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56477FA41CA15ADC00133281 /* SettingsViewController.m */; };
+		5694C4461CB7BF3E00C384B1 /* Information-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5694C4451CB7BF3E00C384B1 /* Information-Icon.png */; };
 		56A385621C71EFE80055F355 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A385611C71EFE80055F355 /* main.m */; };
 		56A385651C71EFE80055F355 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A385641C71EFE80055F355 /* AppDelegate.m */; };
-		56A385681C71EFE80055F355 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A385671C71EFE80055F355 /* ViewController.m */; };
+		56A385681C71EFE80055F355 /* BeaconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A385671C71EFE80055F355 /* BeaconViewController.m */; };
 		56A3856B1C71EFE80055F355 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A385691C71EFE80055F355 /* Main.storyboard */; };
 		56A3856D1C71EFE80055F355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A3856C1C71EFE80055F355 /* Assets.xcassets */; };
 		56A385701C71EFE80055F355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A3856E1C71EFE80055F355 /* LaunchScreen.storyboard */; };
+		56A3857F1C71F0430055F355 /* Miles-Far.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A385781C71F0430055F355 /* Miles-Far.png */; };
+		56A385821C71F0430055F355 /* Miles-Near.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A3857B1C71F0430055F355 /* Miles-Near.png */; };
+		56A385831C71F0430055F355 /* Miles-Title.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A3857C1C71F0430055F355 /* Miles-Title.png */; };
+		56A385851C71F0430055F355 /* Settings-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A3857E1C71F0430055F355 /* Settings-Icon.png */; };
+		56A385881C71F04D0055F355 /* Cisco-Meraki.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A385861C71F04D0055F355 /* Cisco-Meraki.png */; };
+		56A385891C71F04D0055F355 /* Help-Miles-AP-Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A385871C71F04D0055F355 /* Help-Miles-AP-Image.png */; };
+		56A3858B1C71F4B80055F355 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A3858A1C71F4B80055F355 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		56477FA01CA1447900133281 /* Miles-Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Miles-Home.png"; sourceTree = "<group>"; };
+		56477FA21CA1448800133281 /* Miles-Unknown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Miles-Unknown.png"; sourceTree = "<group>"; };
+		56477FA41CA15ADC00133281 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		56477FA61CA15D1800133281 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		5694C4451CB7BF3E00C384B1 /* Information-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Information-Icon.png"; sourceTree = "<group>"; };
 		56A3855D1C71EFE80055F355 /* HelpMilesGetHome_ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpMilesGetHome_ObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A385611C71EFE80055F355 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56A385631C71EFE80055F355 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		56A385641C71EFE80055F355 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		56A385661C71EFE80055F355 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		56A385671C71EFE80055F355 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		56A385661C71EFE80055F355 /* BeaconViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeaconViewController.h; sourceTree = "<group>"; };
+		56A385671C71EFE80055F355 /* BeaconViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconViewController.m; sourceTree = "<group>"; };
 		56A3856A1C71EFE80055F355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56A3856C1C71EFE80055F355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56A3856F1C71EFE80055F355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56A385711C71EFE80055F355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56A385781C71F0430055F355 /* Miles-Far.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Miles-Far.png"; sourceTree = "<group>"; };
+		56A3857B1C71F0430055F355 /* Miles-Near.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Miles-Near.png"; sourceTree = "<group>"; };
+		56A3857C1C71F0430055F355 /* Miles-Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Miles-Title.png"; sourceTree = "<group>"; };
+		56A3857E1C71F0430055F355 /* Settings-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings-Icon.png"; sourceTree = "<group>"; };
+		56A385861C71F04D0055F355 /* Cisco-Meraki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cisco-Meraki.png"; sourceTree = "<group>"; };
+		56A385871C71F04D0055F355 /* Help-Miles-AP-Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Help-Miles-AP-Image.png"; sourceTree = "<group>"; };
+		56A3858A1C71F4B80055F355 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56A3858B1C71F4B80055F355 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +66,7 @@
 		56A385541C71EFE80055F355 = {
 			isa = PBXGroup;
 			children = (
+				56A3858A1C71F4B80055F355 /* CoreLocation.framework */,
 				56A3855F1C71EFE80055F355 /* HelpMilesGetHome_ObjC */,
 				56A3855E1C71EFE80055F355 /* Products */,
 			);
@@ -58,10 +83,13 @@
 		56A3855F1C71EFE80055F355 /* HelpMilesGetHome_ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				56A385771C71F0370055F355 /* Images */,
 				56A385631C71EFE80055F355 /* AppDelegate.h */,
 				56A385641C71EFE80055F355 /* AppDelegate.m */,
-				56A385661C71EFE80055F355 /* ViewController.h */,
-				56A385671C71EFE80055F355 /* ViewController.m */,
+				56A385661C71EFE80055F355 /* BeaconViewController.h */,
+				56A385671C71EFE80055F355 /* BeaconViewController.m */,
+				56477FA61CA15D1800133281 /* SettingsViewController.h */,
+				56477FA41CA15ADC00133281 /* SettingsViewController.m */,
 				56A385691C71EFE80055F355 /* Main.storyboard */,
 				56A3856C1C71EFE80055F355 /* Assets.xcassets */,
 				56A3856E1C71EFE80055F355 /* LaunchScreen.storyboard */,
@@ -77,6 +105,22 @@
 				56A385611C71EFE80055F355 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56A385771C71F0370055F355 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5694C4451CB7BF3E00C384B1 /* Information-Icon.png */,
+				56477FA01CA1447900133281 /* Miles-Home.png */,
+				56A385861C71F04D0055F355 /* Cisco-Meraki.png */,
+				56A385871C71F04D0055F355 /* Help-Miles-AP-Image.png */,
+				56A385781C71F0430055F355 /* Miles-Far.png */,
+				56A3857B1C71F0430055F355 /* Miles-Near.png */,
+				56477FA21CA1448800133281 /* Miles-Unknown.png */,
+				56A3857C1C71F0430055F355 /* Miles-Title.png */,
+				56A3857E1C71F0430055F355 /* Settings-Icon.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +154,7 @@
 				TargetAttributes = {
 					56A3855C1C71EFE80055F355 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 4C6PGUE499;
 					};
 				};
 			};
@@ -136,8 +181,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56A385881C71F04D0055F355 /* Cisco-Meraki.png in Resources */,
+				56A3857F1C71F0430055F355 /* Miles-Far.png in Resources */,
+				56A385851C71F0430055F355 /* Settings-Icon.png in Resources */,
+				5694C4461CB7BF3E00C384B1 /* Information-Icon.png in Resources */,
+				56A385831C71F0430055F355 /* Miles-Title.png in Resources */,
 				56A385701C71EFE80055F355 /* LaunchScreen.storyboard in Resources */,
+				56477FA11CA1447900133281 /* Miles-Home.png in Resources */,
 				56A3856D1C71EFE80055F355 /* Assets.xcassets in Resources */,
+				56A385891C71F04D0055F355 /* Help-Miles-AP-Image.png in Resources */,
+				56A385821C71F0430055F355 /* Miles-Near.png in Resources */,
+				56477FA31CA1448800133281 /* Miles-Unknown.png in Resources */,
 				56A3856B1C71EFE80055F355 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,9 +203,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56A385681C71EFE80055F355 /* ViewController.m in Sources */,
+				56A385681C71EFE80055F355 /* BeaconViewController.m in Sources */,
 				56A385651C71EFE80055F355 /* AppDelegate.m in Sources */,
 				56A385621C71EFE80055F355 /* main.m in Sources */,
+				56477FA51CA15ADC00133281 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +268,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -251,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -263,7 +318,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HelpMilesGetHome_ObjC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jcmconsulting.HelpMilesGetHome-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,7 +331,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HelpMilesGetHome_ObjC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jcmconsulting.HelpMilesGetHome-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +359,7 @@
 				56A385761C71EFE80055F355 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

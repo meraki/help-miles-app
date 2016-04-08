@@ -1,5 +1,5 @@
 //
-//  main.m
+//  BeaconViewController.h
 //  HelpMilesGetHome_ObjC
 //
 //  Created by James McKee on 15/02/2016.
@@ -12,10 +12,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AppDelegate.h"
+#import <CoreLocation/CoreLocation.h>
 
-int main(int argc, char * argv[]) {
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
-    }
-}
+@interface BeaconViewController : UIViewController<CLLocationManagerDelegate, UIAlertViewDelegate>
+
+@property (nonatomic, strong) IBOutlet UILabel * homeLabel;
+@property (nonatomic, strong) IBOutlet UIImageView * proximityImage;
+
+@end
+

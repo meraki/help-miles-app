@@ -1,5 +1,5 @@
 //
-//  main.m
+//  SettingsViewController.m
 //  HelpMilesGetHome_ObjC
 //
 //  Created by James McKee on 15/02/2016.
@@ -11,11 +11,20 @@
 //  https://www.packtpub.com/application-development/learning-ibeacon
 //
 
-#import <UIKit/UIKit.h>
-#import "AppDelegate.h"
+#import "SettingsViewController.h"
 
-int main(int argc, char * argv[]) {
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
-    }
+@interface SettingsViewController ()
+
+@end
+
+@implementation SettingsViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
 }
+
+- (void) didRecieveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
+@end

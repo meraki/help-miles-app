@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Beacon View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BeaconViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,197 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help Miles Get Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPo-su-Qrs">
+                                <rect key="frame" x="158" y="460" width="284" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="284" id="LQV-TE-nHT"/>
+                                    <constraint firstAttribute="height" constant="68" id="vYe-ud-2hf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" red="0.4039215686" green="0.70588235290000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="Help-Miles-AP-Image.png" translatesAutoresizingMaskIntoConstraints="NO" id="SA5-y1-9tN">
+                                <rect key="frame" x="278" y="329" width="164" height="117"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117" id="4p3-eM-MAv"/>
+                                    <constraint firstAttribute="width" constant="164" id="lvv-Pa-Ihu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4A6-Vg-Eef">
+                                <rect key="frame" x="20" y="54" width="560" height="54"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BH2-iz-X4s">
+                                <rect key="frame" x="135" y="137" width="330" height="325"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="330" id="b3l-w4-x3Y"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="Cisco-Meraki.png" translatesAutoresizingMaskIntoConstraints="NO" id="M1i-nI-sKJ">
+                                <rect key="frame" x="244" y="560" width="113" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="YNa-5s-bh9"/>
+                                    <constraint firstAttribute="width" constant="113" id="ptu-2Z-mZ6"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7P-bR-01F">
+                                <rect key="frame" x="20" y="543" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="4Od-Vx-Af4"/>
+                                    <constraint firstAttribute="width" constant="32" id="dNJ-c2-vCA"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Information-Icon.png"/>
+                                <connections>
+                                    <segue destination="ebH-mT-AM5" kind="presentation" id="S83-4f-Z9Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4A6-Vg-Eef" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="35M-s6-zA2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="M1i-nI-sKJ" secondAttribute="bottom" constant="17" id="H37-Kv-7by"/>
+                            <constraint firstAttribute="bottom" secondItem="E7P-bR-01F" secondAttribute="bottom" constant="25" id="PNn-0P-DLu"/>
+                            <constraint firstItem="BH2-iz-X4s" firstAttribute="top" secondItem="4A6-Vg-Eef" secondAttribute="bottom" constant="29" id="XpV-QX-de0"/>
+                            <constraint firstItem="lPo-su-Qrs" firstAttribute="top" secondItem="SA5-y1-9tN" secondAttribute="bottom" constant="14" id="baR-sf-bl9"/>
+                            <constraint firstItem="M1i-nI-sKJ" firstAttribute="top" secondItem="BH2-iz-X4s" secondAttribute="bottom" constant="98" id="bws-Zz-JUU"/>
+                            <constraint firstItem="E7P-bR-01F" firstAttribute="leading" secondItem="4A6-Vg-Eef" secondAttribute="leading" id="byd-Y8-qL4"/>
+                            <constraint firstItem="BH2-iz-X4s" firstAttribute="centerX" secondItem="lPo-su-Qrs" secondAttribute="centerX" id="hI2-ei-bm3"/>
+                            <constraint firstItem="M1i-nI-sKJ" firstAttribute="top" secondItem="lPo-su-Qrs" secondAttribute="bottom" constant="32" id="jA0-3d-GAF"/>
+                            <constraint firstItem="4A6-Vg-Eef" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sTN-Ng-gUZ"/>
+                            <constraint firstItem="4A6-Vg-Eef" firstAttribute="centerX" secondItem="BH2-iz-X4s" secondAttribute="centerX" id="sv6-Xw-6L1"/>
+                            <constraint firstItem="BH2-iz-X4s" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tqQ-9w-aL5"/>
+                            <constraint firstItem="4A6-Vg-Eef" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="34" id="ttO-mt-uoY"/>
+                            <constraint firstItem="SA5-y1-9tN" firstAttribute="trailing" secondItem="lPo-su-Qrs" secondAttribute="trailing" id="uhT-W8-brF"/>
+                            <constraint firstItem="lPo-su-Qrs" firstAttribute="centerX" secondItem="M1i-nI-sKJ" secondAttribute="centerX" id="xC3-fY-6Vn"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="homeLabel" destination="4A6-Vg-Eef" id="apY-se-jKl"/>
+                        <outlet property="proximityImage" destination="BH2-iz-X4s" id="27y-9V-952"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="481" y="600"/>
+        </scene>
+        <!--SettingsViewController-->
+        <scene sceneID="OVe-Ft-wPi">
+            <objects>
+                <viewController title="SettingsViewController" id="ebH-mT-AM5" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yi7-c7-Zie"/>
+                        <viewControllerLayoutGuide type="bottom" id="5o0-N0-z9K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="TopLeft" id="OAf-Ol-Rnj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="Cisco-Meraki.png" translatesAutoresizingMaskIntoConstraints="NO" id="TDv-H0-G6u">
+                                <rect key="frame" x="244" y="557" width="113" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="Rs8-Em-4zQ"/>
+                                    <constraint firstAttribute="height" constant="23" id="VBC-1G-hCO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help Miles Get Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgu-JC-zCg">
+                                <rect key="frame" x="158" y="28" width="284" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="284" id="9a8-mF-obo"/>
+                                    <constraint firstAttribute="height" constant="68" id="iqU-M4-LQA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" red="0.4039215686" green="0.70588235290000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RmT-9q-Efa">
+                                <rect key="frame" x="277" y="485" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="bVD-YG-lGo"/>
+                                </constraints>
+                                <state key="normal" title="Exit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="mVq-mt-Yug"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGc-1k-DhM">
+                                <rect key="frame" x="158" y="104" width="284" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="aBu-gJ-f6N"/>
+                                </constraints>
+                                <string key="text">Help Miles Get Home is a simple iOS application that uses the Core Location framework to demonstrate the concepts of Ranging and Region Monitoring with Bluetooth Low Energy (BLE) Beacons. 
+</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KME-1d-pBV">
+                                <rect key="frame" x="158" y="198" width="284" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="DIJ-bF-6tW"/>
+                                </constraints>
+                                <string key="text">The purpose of this application is to demonstrate one of the many use cases BLE Beacons can provide i.e. detection of movement of a smart device as its proximity to a configured BLE beacon changes over time. This detection capability can provide the basis for user engagement based on location.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dln-2c-2o7">
+                                <rect key="frame" x="158" y="355" width="282" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="282" id="gUS-TY-PUv"/>
+                                </constraints>
+                                <string key="text">This application relies on the following UUID being configured for operation:
+</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E2C56DB5-DFFB-48D2-0001-D0F5A71096E0" textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv3-d2-XxX">
+                                <rect key="frame" x="158" y="414" width="282" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="718-Mw-ua3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KME-1d-pBV" firstAttribute="centerX" secondItem="RmT-9q-Efa" secondAttribute="centerX" id="3qw-Fv-UoS"/>
+                            <constraint firstItem="mgu-JC-zCg" firstAttribute="trailing" secondItem="mGc-1k-DhM" secondAttribute="trailing" id="Hig-O9-RYv"/>
+                            <constraint firstItem="KME-1d-pBV" firstAttribute="top" secondItem="mGc-1k-DhM" secondAttribute="bottom" id="LBa-OG-F4F"/>
+                            <constraint firstItem="Dln-2c-2o7" firstAttribute="centerY" secondItem="OAf-Ol-Rnj" secondAttribute="centerY" constant="70.5" id="LV3-Ou-qR2"/>
+                            <constraint firstAttribute="bottom" secondItem="TDv-H0-G6u" secondAttribute="bottom" constant="20" symbolic="YES" id="O5n-pj-vU0"/>
+                            <constraint firstItem="mGc-1k-DhM" firstAttribute="top" secondItem="mgu-JC-zCg" secondAttribute="bottom" constant="8" symbolic="YES" id="QcI-Ln-Gc5"/>
+                            <constraint firstItem="Dln-2c-2o7" firstAttribute="leading" secondItem="KME-1d-pBV" secondAttribute="leading" id="Rkh-Zs-Nu8"/>
+                            <constraint firstItem="mgu-JC-zCg" firstAttribute="top" secondItem="yi7-c7-Zie" secondAttribute="bottom" constant="8" symbolic="YES" id="RnR-0R-xWh"/>
+                            <constraint firstItem="lv3-d2-XxX" firstAttribute="leading" secondItem="Dln-2c-2o7" secondAttribute="leading" id="VcD-S6-Jm4"/>
+                            <constraint firstItem="lv3-d2-XxX" firstAttribute="trailing" secondItem="Dln-2c-2o7" secondAttribute="trailing" id="ar3-KL-RU3"/>
+                            <constraint firstItem="mgu-JC-zCg" firstAttribute="leading" secondItem="mGc-1k-DhM" secondAttribute="leading" id="atz-tl-Wmd"/>
+                            <constraint firstItem="lv3-d2-XxX" firstAttribute="top" secondItem="Dln-2c-2o7" secondAttribute="bottom" constant="28" id="bEQ-nP-edE"/>
+                            <constraint firstItem="mgu-JC-zCg" firstAttribute="centerX" secondItem="OAf-Ol-Rnj" secondAttribute="centerX" id="gT9-PW-9Tm"/>
+                            <constraint firstItem="mGc-1k-DhM" firstAttribute="trailing" secondItem="KME-1d-pBV" secondAttribute="trailing" id="htm-1s-PGo"/>
+                            <constraint firstItem="RmT-9q-Efa" firstAttribute="centerX" secondItem="TDv-H0-G6u" secondAttribute="centerX" id="iSt-sA-V4z"/>
+                            <constraint firstItem="TDv-H0-G6u" firstAttribute="top" secondItem="RmT-9q-Efa" secondAttribute="bottom" constant="42" id="vjs-Rj-e4B"/>
+                            <constraint firstItem="mGc-1k-DhM" firstAttribute="leading" secondItem="KME-1d-pBV" secondAttribute="leading" id="yKD-2Y-ogl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JgS-hn-y9X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1124" y="600"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Cisco-Meraki.png" width="350" height="72"/>
+        <image name="Help-Miles-AP-Image.png" width="620" height="430"/>
+        <image name="Information-Icon.png" width="128" height="128"/>
+    </resources>
 </document>
