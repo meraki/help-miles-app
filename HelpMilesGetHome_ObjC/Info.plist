@@ -45,5 +45,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationUsageDescription</key>
+	<string>Miles Meraki would like to use your location!</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Miles Meraki would like to use your location!</string>
 </dict>
 </plist>
