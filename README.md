@@ -1,7 +1,7 @@
 # help-miles-app
 Name: Help Miles Get Home
 
-Version: 1.4
+Version: 1.5 (Updated to support iOS10)
 
 Author Comments: "Help Miles Get Home" Objective-C Example/Demonstration Application
 
